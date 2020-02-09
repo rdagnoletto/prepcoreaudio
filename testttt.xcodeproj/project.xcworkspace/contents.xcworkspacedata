@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:testttt.xcodeproj">
+      location = "absolute:/Users/ragnoletto/Documents/Work/applePrep/testttt/testttt/AudioFiles">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

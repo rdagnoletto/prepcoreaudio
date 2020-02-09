@@ -14,7 +14,8 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    @IBOutlet var testSwitch: UISwitch!
+    
 
 }
 

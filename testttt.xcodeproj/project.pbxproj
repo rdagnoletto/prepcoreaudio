@@ -16,6 +16,10 @@
 		322D69BB23EE0B5A00184AD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 322D69BA23EE0B5A00184AD8 /* Assets.xcassets */; };
 		322D69BE23EE0B5A00184AD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 322D69BC23EE0B5A00184AD8 /* LaunchScreen.storyboard */; };
 		322D69C923EE0B5A00184AD8 /* testtttTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322D69C823EE0B5A00184AD8 /* testtttTests.swift */; };
+		32D3220423EF752B0005491F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D3220323EF752B0005491F /* AVFoundation.framework */; };
+		32D3220623EF75360005491F /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D3220523EF75360005491F /* CoreAudio.framework */; };
+		32D3221B23EF841F0005491F /* AudioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D3221A23EF841F0005491F /* AudioTableViewCell.swift */; };
+		32D3222023F083AB0005491F /* SongFolder in Resources */ = {isa = PBXBuildFile; fileRef = 32D3221F23F083AB0005491F /* SongFolder */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,10 @@
 		322D69C423EE0B5A00184AD8 /* testtttTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testtttTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		322D69C823EE0B5A00184AD8 /* testtttTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testtttTests.swift; sourceTree = "<group>"; };
 		322D69CA23EE0B5A00184AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32D3220323EF752B0005491F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		32D3220523EF75360005491F /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		32D3221A23EF841F0005491F /* AudioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTableViewCell.swift; sourceTree = "<group>"; };
+		32D3221F23F083AB0005491F /* SongFolder */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SongFolder; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32D3220623EF75360005491F /* CoreAudio.framework in Frameworks */,
+				32D3220423EF752B0005491F /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +78,7 @@
 				322D69AB23EE0B5900184AD8 /* testttt */,
 				322D69C723EE0B5A00184AD8 /* testtttTests */,
 				322D69AA23EE0B5900184AD8 /* Products */,
+				32D3220223EF752A0005491F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,11 +94,13 @@
 		322D69AB23EE0B5900184AD8 /* testttt */ = {
 			isa = PBXGroup;
 			children = (
+				32D3221F23F083AB0005491F /* SongFolder */,
 				322D69AC23EE0B5900184AD8 /* AppDelegate.swift */,
 				322D69AE23EE0B5900184AD8 /* SceneDelegate.swift */,
 				322D69B023EE0B5900184AD8 /* FirstViewController.swift */,
 				322D69B223EE0B5900184AD8 /* SecondViewController.swift */,
 				322D69B423EE0B5900184AD8 /* Main.storyboard */,
+				32D3221A23EF841F0005491F /* AudioTableViewCell.swift */,
 				322D69BA23EE0B5A00184AD8 /* Assets.xcassets */,
 				322D69BC23EE0B5A00184AD8 /* LaunchScreen.storyboard */,
 				322D69BF23EE0B5A00184AD8 /* Info.plist */,
@@ -103,6 +116,15 @@
 				322D69CA23EE0B5A00184AD8 /* Info.plist */,
 			);
 			path = testtttTests;
+			sourceTree = "<group>";
+		};
+		32D3220223EF752A0005491F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32D3220523EF75360005491F /* CoreAudio.framework */,
+				32D3220323EF752B0005491F /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +211,7 @@
 				322D69BE23EE0B5A00184AD8 /* LaunchScreen.storyboard in Resources */,
 				322D69BB23EE0B5A00184AD8 /* Assets.xcassets in Resources */,
 				322D69B623EE0B5900184AD8 /* Main.storyboard in Resources */,
+				32D3222023F083AB0005491F /* SongFolder in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +231,7 @@
 			files = (
 				322D69B323EE0B5900184AD8 /* SecondViewController.swift in Sources */,
 				322D69B123EE0B5900184AD8 /* FirstViewController.swift in Sources */,
+				32D3221B23EF841F0005491F /* AudioTableViewCell.swift in Sources */,
 				322D69AD23EE0B5900184AD8 /* AppDelegate.swift in Sources */,
 				322D69B923EE0B5900184AD8 /* testttt.xcdatamodeld in Sources */,
 				322D69AF23EE0B5900184AD8 /* SceneDelegate.swift in Sources */,
