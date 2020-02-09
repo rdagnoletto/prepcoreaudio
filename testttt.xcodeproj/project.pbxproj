@@ -33,7 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		322D69A923EE0B5900184AD8 /* testttt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testttt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		322D69A923EE0B5900184AD8 /* PrepCoreAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrepCoreAudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		322D69AC23EE0B5900184AD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		322D69AE23EE0B5900184AD8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		322D69B023EE0B5900184AD8 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 		322D69AA23EE0B5900184AD8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				322D69A923EE0B5900184AD8 /* testttt.app */,
+				322D69A923EE0B5900184AD8 /* PrepCoreAudio.app */,
 				322D69C423EE0B5A00184AD8 /* testtttTests.xctest */,
 			);
 			name = Products;
@@ -144,7 +144,7 @@
 			);
 			name = testttt;
 			productName = testttt;
-			productReference = 322D69A923EE0B5900184AD8 /* testttt.app */;
+			productReference = 322D69A923EE0B5900184AD8 /* PrepCoreAudio.app */;
 			productType = "com.apple.product-type.application";
 		};
 		322D69C323EE0B5A00184AD8 /* testtttTests */ = {
@@ -401,8 +401,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ragnoletto.testttt;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ragnoletto.PrepCoreAudio;
+				PRODUCT_NAME = PrepCoreAudio;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -419,8 +419,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ragnoletto.testttt;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ragnoletto.PrepCoreAudio;
+				PRODUCT_NAME = PrepCoreAudio;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
