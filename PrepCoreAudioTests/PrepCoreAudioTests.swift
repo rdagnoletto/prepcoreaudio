@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import testttt
+@testable import PrepCoreAudio
 
 class testtttTests: XCTestCase {
 
