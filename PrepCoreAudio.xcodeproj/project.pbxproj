@@ -12,7 +12,7 @@
 		322D69B123EE0B5900184AD8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322D69B023EE0B5900184AD8 /* FirstViewController.swift */; };
 		322D69B323EE0B5900184AD8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322D69B223EE0B5900184AD8 /* SecondViewController.swift */; };
 		322D69B623EE0B5900184AD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 322D69B423EE0B5900184AD8 /* Main.storyboard */; };
-		322D69B923EE0B5900184AD8 /* testttt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 322D69B723EE0B5900184AD8 /* testttt.xcdatamodeld */; };
+		322D69B923EE0B5900184AD8 /* PrepCoreAudio.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 322D69B723EE0B5900184AD8 /* PrepCoreAudio.xcdatamodeld */; };
 		322D69BB23EE0B5A00184AD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 322D69BA23EE0B5A00184AD8 /* Assets.xcassets */; };
 		322D69BE23EE0B5A00184AD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 322D69BC23EE0B5A00184AD8 /* LaunchScreen.storyboard */; };
 		322D69C923EE0B5A00184AD8 /* PrepCoreAudioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322D69C823EE0B5A00184AD8 /* PrepCoreAudioTests.swift */; };
@@ -104,7 +104,7 @@
 				322D69BA23EE0B5A00184AD8 /* Assets.xcassets */,
 				322D69BC23EE0B5A00184AD8 /* LaunchScreen.storyboard */,
 				322D69BF23EE0B5A00184AD8 /* Info.plist */,
-				322D69B723EE0B5900184AD8 /* testttt.xcdatamodeld */,
+				322D69B723EE0B5900184AD8 /* PrepCoreAudio.xcdatamodeld */,
 			);
 			path = PrepCoreAudio;
 			sourceTree = "<group>";
@@ -233,7 +233,7 @@
 				322D69B123EE0B5900184AD8 /* FirstViewController.swift in Sources */,
 				32D3221B23EF841F0005491F /* AudioTableViewCell.swift in Sources */,
 				322D69AD23EE0B5900184AD8 /* AppDelegate.swift in Sources */,
-				322D69B923EE0B5900184AD8 /* testttt.xcdatamodeld in Sources */,
+				322D69B923EE0B5900184AD8 /* PrepCoreAudio.xcdatamodeld in Sources */,
 				322D69AF23EE0B5900184AD8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,13 +503,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		322D69B723EE0B5900184AD8 /* testttt.xcdatamodeld */ = {
+		322D69B723EE0B5900184AD8 /* PrepCoreAudio.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				322D69B823EE0B5900184AD8 /* testttt.xcdatamodel */,
 			);
 			currentVersion = 322D69B823EE0B5900184AD8 /* testttt.xcdatamodel */;
-			path = testttt.xcdatamodeld;
+			path = PrepCoreAudio.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
