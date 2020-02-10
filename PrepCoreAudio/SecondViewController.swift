@@ -10,6 +10,13 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBAction func RestartSong(_ sender: UIButton, forEvent event: UIEvent) {
+        
+    }
+    @IBAction func EffectSlider(_ sender: UISlider, forEvent event: UIEvent) {
+    }
+    @IBAction func EffectSwitch(_ sender: UISwitch, forEvent event: UIEvent) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

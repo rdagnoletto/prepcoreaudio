@@ -9,7 +9,6 @@
 import UIKit
 
 class AudioTableViewCell: UITableViewCell {
-    @IBOutlet weak var audioName: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
