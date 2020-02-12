@@ -11,7 +11,7 @@ import UIKit
 class SecondViewController: UIViewController {
 
     @IBAction func RestartSong(_ sender: UIButton, forEvent event: UIEvent) {
-        
+        MyAVPlayer.sharedInstance.restartSong()
     }
     @IBAction func EffectSlider(_ sender: UISlider, forEvent event: UIEvent) {
     }
@@ -21,7 +21,6 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    @IBOutlet var testSwitch: UISwitch!
     
 
 }

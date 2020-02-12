@@ -26,21 +26,13 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
           
-            playSong(index: indexPath.row)
-    }
-    func playSong(index: Int){
-        do{
-            let songPath = Bundle.main.path(forResource: songs[index], ofType: ".mp3", inDirectory: "SongFolder")
-            try player =  AVAudioPlayer(contentsOf: URL(fileURLWithPath: songPath!))
-            player.play()
-        }catch{}
-            
+        MyAVPlayer.sharedInstance.playPauseSong(index: indexPath.row)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        songs =  getSongs()
+        songs =  MyAVPlayer.sharedInstance.songs
         self.songTable.register(AudioTableViewCell.self, forCellReuseIdentifier: "cell")
         songTable.delegate = self
         songTable.dataSource = self
@@ -54,23 +46,6 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
 }
 
-func getSongs() -> [String] {
-    var names: [String] = []
-    let path = Bundle.main.resourceURL?.appendingPathComponent("SongFolder")
-    do{
-        let songs =  try FileManager.default.contentsOfDirectory(at: path!, includingPropertiesForKeys: nil, options: FileManager.DirectoryEnumerationOptions.skipsHiddenFiles)
-        
-        for song in songs{
-            
-            let strArray =  song.absoluteString.components(separatedBy: "/")
-            var songName = strArray[strArray.count-1].replacingOccurrences(of: "%20", with: " ")
-            songName =  songName.replacingOccurrences(of: ".mp3", with: "")
-            names.append(songName)
-            
-        }
-    }catch{}
-    
-    return names
-}
+
 
 
