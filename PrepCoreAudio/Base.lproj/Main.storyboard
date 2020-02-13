@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AudioFileCell" id="yVo-dA-g1t" customClass="AudioTableViewCell" customModule="PrepCoreAudio" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AudioFileCell" id="yVo-dA-g1t" customClass="AudioTableViewCell" customModule="PrepCoreAudio" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yVo-dA-g1t" id="Fh9-4x-cnV">
@@ -43,6 +43,9 @@
                                                 <constraint firstItem="JuF-FY-eLX" firstAttribute="trailing" secondItem="Fh9-4x-cnV" secondAttribute="trailingMargin" id="rHd-Fd-G7i"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                        </accessibility>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
@@ -55,7 +58,6 @@
                             <constraint firstItem="FrR-1T-RdU" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="bcJ-D9-Ry3"/>
                             <constraint firstItem="FrR-1T-RdU" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="dW7-hp-03E"/>
                             <constraint firstItem="FrR-1T-RdU" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="gfD-si-D1F"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="FrR-1T-RdU" secondAttribute="bottom" id="xVI-2a-ouX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
@@ -77,18 +79,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DDL-sy-u9T">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DDL-sy-u9T">
                                 <rect key="frame" x="275" y="168" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="EffectSwitch:forEvent:" destination="8rJ-Kc-sve" eventType="valueChanged" id="hZx-GP-in8"/>
                                 </connections>
                             </switch>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Vi9-Et-E1l">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-20" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="Vi9-Et-E1l">
                                 <rect key="frame" x="239" y="279" width="118" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="EffectSlider:forEvent:" destination="8rJ-Kc-sve" eventType="valueChanged" id="Rot-ZN-JCh"/>
+                                    <action selector="SliderDoneMoving:forEvent:" destination="8rJ-Kc-sve" eventType="editingDidEnd" id="b34-UO-L1n"/>
+                                    <action selector="SliderMoved:forEvent:" destination="8rJ-Kc-sve" eventType="valueChanged" id="4Oc-r9-kFu"/>
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sG6-p9-uMd">

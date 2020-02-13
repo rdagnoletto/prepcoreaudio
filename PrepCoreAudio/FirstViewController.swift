@@ -10,8 +10,6 @@ import UIKit
 import AVFoundation
 
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var player = AVAudioPlayer()
-    var isPlaying = false
     @IBOutlet var songTable: UITableView!
     var songs: [String] = []
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -25,14 +23,13 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
      }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-          
-        MyAVPlayer.sharedInstance.playPauseSong(index: indexPath.row)
+        MyAVAudioEngine.sharedInstance.playPauseSong(index: indexPath.row)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        songs =  MyAVPlayer.sharedInstance.songs
+        songs =  MyAVAudioEngine.sharedInstance.songs
         self.songTable.register(AudioTableViewCell.self, forCellReuseIdentifier: "cell")
         songTable.delegate = self
         songTable.dataSource = self
